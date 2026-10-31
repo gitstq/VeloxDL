@@ -1,0 +1,56 @@
+# ---------- 构建产物 ----------
+/bin/
+/dist/
+/out/
+build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 二进制文件名（不带扩展名，避免误提交编译出来的可执行文件）
+veloxdl
+
+# ---------- 测试与覆盖率 ----------
+*.test
+*.out
+coverage.txt
+coverage.html
+coverage/
+
+# ---------- 断点续传状态文件（运行时产物） ----------
+*.veloxdl.json
+
+# ---------- 环境变量与本地配置 ----------
+.env
+.env.*
+!.env.example
+*.local
+*.local.json
+config.local.yaml
+config.local.yml
+
+# ---------- Go 工作区 ----------
+go.sum.backup
+vendor/
+
+# ---------- 依赖目录 ----------
+node_modules/
+
+# ---------- 编辑器与 IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ---------- 操作系统 ----------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
